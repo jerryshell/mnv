@@ -1,6 +1,6 @@
 return {
 
-  -- extend auto completion
+  -- auto completion
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -19,7 +19,7 @@ return {
     end
   },
 
-  -- add rust to treesitter
+  -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
@@ -27,7 +27,7 @@ return {
     end,
   },
 
-  -- correctly setup mason lsp / dap extensions
+  -- mason lsp / dap extensions
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
@@ -35,7 +35,7 @@ return {
     end,
   },
 
-  -- correctly setup lspconfig
+  -- lspconfig
   {
     "neovim/nvim-lspconfig",
     dependencies = { "simrat39/rust-tools.nvim" },
