@@ -24,9 +24,9 @@ return {
         icons = {
           package_installed = "✓",
           package_pending = "",
-          package_uninstalled = "✗"
-        }
-      }
+          package_uninstalled = "✗",
+        },
+      },
     },
   },
 
@@ -35,5 +35,4 @@ return {
   { import = "lazyvim.plugins.extras.lang.json" },
   { import = "plugins.extras.lang.rust" },
   { import = "plugins.extras.lang.nodejs" },
-
 }
