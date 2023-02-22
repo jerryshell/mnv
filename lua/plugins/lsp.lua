@@ -1,5 +1,4 @@
 return {
-
   -- uncomment and add lsp servers with their config to servers below
   {
     "neovim/nvim-lspconfig",
