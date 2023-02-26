@@ -15,7 +15,7 @@ return {
       ]]
       opts.section.header.val = vim.split(logo, "\n", {})
       opts.section.buttons.val = {
-        dashboard.button("p", " " .. "Open project", ":Telescope project display_type=full <CR>"),
+        -- dashboard.button("p", " " .. "Open project", ":Telescope project display_type=full <CR>"),
         dashboard.button("e", " " .. "New file", ":ene <BAR> startinsert <CR>"),
         dashboard.button("f", " " .. "Find file", ":cd $HOME/Projects | Telescope find_files <CR>"),
         dashboard.button("r", " " .. "Recent files", ":Telescope oldfiles <CR>"),
