@@ -2,8 +2,8 @@ return {
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
-    opts = {
-      ensure_installed = {
+    config = function(_, opts)
+      opts.ensure_installed = {
         "bash",
         "comment",
         "diff",
@@ -13,19 +13,18 @@ return {
         "gitattributes",
         "gitcommit",
         "gitignore",
-        "graphql",
-        "http",
-        "jq",
         "lua",
         "make",
         "markdown",
         "markdown_inline",
+        "mermaid",
         "python",
         "regex",
         "sql",
         "vim",
         "yaml",
-      },
-    },
+      }
+      require("nvim-treesitter.configs").setup(opts)
+    end,
   },
 }
