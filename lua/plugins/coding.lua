@@ -2,7 +2,7 @@ return {
   -- treesitter
   {
     "nvim-treesitter/nvim-treesitter",
-    config = function(_, opts)
+    opts = function(_, opts)
       opts.ensure_installed = {
         "bash",
         "comment",
@@ -24,7 +24,6 @@ return {
         "vim",
         "yaml",
       }
-      require("nvim-treesitter.configs").setup(opts)
     end,
   },
 }
