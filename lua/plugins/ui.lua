@@ -1,4 +1,14 @@
 return {
+  -- notify customization
+  {
+    "rcarriga/nvim-notify",
+    opts = {
+      stages = "fade_in_slide_out",
+      timeout = 1500,
+      render = "compact",
+    },
+  },
+
   -- dashboard
   {
     "goolord/alpha-nvim",
