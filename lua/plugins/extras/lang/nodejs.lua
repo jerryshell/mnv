@@ -35,10 +35,7 @@ return {
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
-      vim.list_extend(
-        opts.ensure_installed,
-        { "css-lsp", "eslint-lsp", "html-lsp", "stylelint-lsp", "typescript-language-server" }
-      )
+      vim.list_extend(opts.ensure_installed, { "css-lsp", "eslint-lsp", "html-lsp", "typescript-language-server" })
     end,
   },
 }
