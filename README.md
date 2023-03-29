@@ -2,6 +2,12 @@
 
 My Neovim setup based on [LazyVim](https://lazyvim.org)
 
+## Supported development environment
+
+- Rust
+- Node.js
+- Go
+
 ## clean_nvim.sh
 
 ⚠️ Please make sure you fully understand the function of these commands!
