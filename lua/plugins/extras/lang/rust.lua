@@ -1,5 +1,6 @@
 return {
-  -- auto completion
+
+  -- extend auto completion
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -18,23 +19,31 @@ return {
     end,
   },
 
-  -- treesitter
+  -- add rust to treesitter
   {
     "nvim-treesitter/nvim-treesitter",
     opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, { "rust", "toml", "ron" })
+      vim.list_extend(opts.ensure_installed, { "ron", "rust", "toml" })
     end,
   },
 
-  -- mason lsp / dap extensions
+  -- correctly setup mason lsp extensions
   {
     "williamboman/mason.nvim",
     opts = function(_, opts)
-      vim.list_extend(opts.ensure_installed, { "codelldb", "rust-analyzer", "taplo" })
+      vim.list_extend(opts.ensure_installed, { "rust-analyzer", "taplo" })
     end,
   },
 
-  -- lspconfig
+  -- correctly setup mason dap extensions
+  {
+    "jay-babu/mason-nvim-dap.nvim",
+    opts = function(_, opts)
+      vim.list_extend(opts.ensure_installed, { "codelldb" })
+    end,
+  },
+
+  -- correctly setup lspconfig
   {
     "neovim/nvim-lspconfig",
     dependencies = { "simrat39/rust-tools.nvim" },
@@ -47,7 +56,6 @@ return {
             if client.name == "rust_analyzer" then
               vim.keymap.set("n", "K", "<CMD>RustHoverActions<CR>", { buffer = buffer })
               vim.keymap.set("n", "<leader>ct", "<CMD>RustDebuggables<CR>", { buffer = buffer, desc = "Run Test" })
-              vim.keymap.set("n", "<leader>dr", "<CMD>RustDebuggables<CR>", { buffer = buffer, desc = "Run" })
             end
           end)
           local mason_registry = require("mason-registry")
@@ -101,7 +109,6 @@ return {
               vim.lsp.buf.hover()
             end
           end
-
           require("lazyvim.util").on_attach(function(client, buffer)
             -- stylua: ignore
             if client.name == "taplo" then
