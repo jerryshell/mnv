@@ -1,4 +1,5 @@
 return {
+
   -- extend auto completion
   {
     "hrsh7th/nvim-cmp",
@@ -45,13 +46,19 @@ return {
         "gitattributes",
         "gitcommit",
         "gitignore",
+        "graphql",
+        "hcl",
+        "http",
+        "jq",
         "lua",
         "luadoc",
+        "luap",
         "make",
         "markdown",
         "markdown_inline",
         "mermaid",
         "python",
+        "query",
         "regex",
         "sql",
         "vim",
