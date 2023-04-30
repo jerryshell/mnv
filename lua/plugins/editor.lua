@@ -117,12 +117,6 @@ return {
     end,
   },
 
-  -- git blame
-  {
-    "f-person/git-blame.nvim",
-    event = "BufReadPre",
-  },
-
   -- git conflict
   {
     "akinsho/git-conflict.nvim",
@@ -168,13 +162,5 @@ return {
         },
       })
     end,
-  },
-
-  -- add zen-mode
-  {
-    "folke/zen-mode.nvim",
-    cmd = "ZenMode",
-    config = true,
-    keys = { { "<leader>z", "<cmd>ZenMode<cr>", desc = "Zen Mode" } },
   },
 }

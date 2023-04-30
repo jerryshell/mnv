@@ -5,6 +5,12 @@ return {
     "neovim/nvim-lspconfig",
     ---@class PluginLspOpts
     opts = {
+      diagnostics = {
+        update_in_insert = true,
+      },
+      format = {
+        timeout_ms = 5000,
+      },
       ---@type lspconfig.options
       servers = {
         -- sourcekit will be automatically installed with mason and loaded with lspconfig
