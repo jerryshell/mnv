@@ -5,8 +5,9 @@ My Neovim setup based on [LazyVim](https://lazyvim.org)
 ## Supported development environment
 
 - Rust
-- Node.js
+- Node.js & TypeScript
 - Go
+- Lua
 
 ## clean_nvim.sh
 

@@ -92,10 +92,10 @@ return {
   -- core language specific extension modules
   { import = "lazyvim.plugins.extras.lang.typescript" },
   { import = "lazyvim.plugins.extras.lang.json" },
+  { import = "lazyvim.plugins.extras.lang.go" },
   { import = "lazyvim.plugins.extras.dap.nlua" },
 
   -- custom language specific extension modules
-  { import = "plugins.extras.lang.golang" },
   { import = "plugins.extras.lang.rust" },
   { import = "plugins.extras.lang.nodejs" },
 }
