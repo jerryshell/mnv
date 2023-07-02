@@ -11,6 +11,7 @@ return {
       format = {
         timeout_ms = 5000,
       },
+      inlay_hints = { enabled = vim.fn.has("nvim-0.10") },
       ---@type lspconfig.options
       servers = {
         -- sourcekit will be automatically installed with mason and loaded with lspconfig
@@ -90,12 +91,12 @@ return {
   },
 
   -- core language specific extension modules
-  { import = "lazyvim.plugins.extras.lang.typescript" },
-  { import = "lazyvim.plugins.extras.lang.json" },
-  { import = "lazyvim.plugins.extras.lang.go" },
   { import = "lazyvim.plugins.extras.dap.nlua" },
+  { import = "lazyvim.plugins.extras.lang.go" },
+  { import = "lazyvim.plugins.extras.lang.json" },
+  { import = "lazyvim.plugins.extras.lang.rust" },
+  { import = "lazyvim.plugins.extras.lang.typescript" },
 
   -- custom language specific extension modules
-  { import = "plugins.extras.lang.rust" },
   { import = "plugins.extras.lang.nodejs" },
 }
