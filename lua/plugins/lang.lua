@@ -31,7 +31,7 @@ return {
       ui = {
         icons = {
           package_installed = "✓",
-          package_pending = "",
+          package_pending = "*",
           package_uninstalled = "✗",
         },
       },
@@ -92,11 +92,11 @@ return {
 
   -- core language specific extension modules
   { import = "lazyvim.plugins.extras.dap.nlua" },
+  { import = "lazyvim.plugins.extras.lang.clangd" },
   { import = "lazyvim.plugins.extras.lang.go" },
   { import = "lazyvim.plugins.extras.lang.json" },
+  { import = "lazyvim.plugins.extras.lang.python" },
   { import = "lazyvim.plugins.extras.lang.rust" },
+  { import = "lazyvim.plugins.extras.lang.terraform" },
   { import = "lazyvim.plugins.extras.lang.typescript" },
-
-  -- custom language specific extension modules
-  { import = "plugins.extras.lang.nodejs" },
 }

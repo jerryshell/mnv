@@ -5,9 +5,10 @@ My Neovim setup based on [LazyVim](https://lazyvim.org)
 ## Supported development environment
 
 - Rust
-- Node.js & TypeScript
+- TypeScript
 - Go
 - Lua
+- Python
 
 ## clean_nvim.sh
 
@@ -25,3 +26,4 @@ rm -rf ~/.cache/nvim
 ```bash
 git clone https://github.com/jerryshell/mnv ~/.config/nvim
 ```
+

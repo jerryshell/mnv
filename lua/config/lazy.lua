@@ -10,16 +10,21 @@ require("lazy").setup({
   spec = {
     -- import LazyVim plugins
     { "LazyVim/LazyVim", import = "lazyvim.plugins", version = "^2.0" },
-    -- lazyvim UI extension modules
-    { import = "lazyvim.plugins.extras.ui.mini-animate" },
-    -- lazyvim editor extension modules
-    { import = "lazyvim.plugins.extras.util.project" },
+    -- lazyvim copilot extension modules
+    -- { import = "lazyvim.plugins.extras.coding.copilot" },
+    -- lazyvim yanky extension modules
+    { import = "lazyvim.plugins.extras.coding.yanky" },
     -- lazyvim dap core extension modules
     { import = "lazyvim.plugins.extras.dap.core" },
+    -- lazyvim editor extension modules
+    { import = "lazyvim.plugins.extras.editor.flash" },
     -- lazyvim test core extension modules
     { import = "lazyvim.plugins.extras.test.core" },
-    -- lazyvim coding extension modules
-    -- { import = "lazyvim.plugins.extras.coding.copilot" },
+    -- lazyvim UI extension modules
+    { import = "lazyvim.plugins.extras.ui.edgy" },
+    { import = "lazyvim.plugins.extras.ui.mini-animate" },
+    -- lazyvim project extension modules
+    { import = "lazyvim.plugins.extras.util.project" },
     -- import/override with your plugins
     { import = "plugins" },
   },
