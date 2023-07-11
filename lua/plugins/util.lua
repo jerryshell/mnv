@@ -12,12 +12,6 @@ return {
   },
 
   {
-    "andythigpen/nvim-coverage",
-    event = "VeryLazy",
-    config = true,
-  },
-
-  {
     "rest-nvim/rest.nvim",
     ft = "http",
     config = function()

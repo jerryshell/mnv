@@ -8,7 +8,6 @@ My Neovim setup based on [LazyVim](https://lazyvim.org)
 - TypeScript
 - Go
 - Lua
-- Python
 
 ## clean_nvim.sh
 
