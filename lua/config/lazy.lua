@@ -17,7 +17,7 @@ require("lazy").setup({
     -- lazyvim dap core extension modules
     { import = "lazyvim.plugins.extras.dap.core" },
     -- lazyvim editor extension modules
-    { import = "lazyvim.plugins.extras.editor.flash" },
+    -- { import = "lazyvim.plugins.extras.editor.flash" },
     -- lazyvim test core extension modules
     { import = "lazyvim.plugins.extras.test.core" },
     -- lazyvim UI extension modules

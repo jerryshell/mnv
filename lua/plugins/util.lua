@@ -14,7 +14,7 @@ return {
   {
     "rest-nvim/rest.nvim",
     ft = "http",
-    config = function()
+    opts = function(_, opts)
       require("rest-nvim").setup({
         -- Open request results in a horizontal split
         result_split_horizontal = true,
