@@ -1,13 +1,6 @@
 # MNv
 
-My Neovim setup based on [LazyVim](https://lazyvim.org)
-
-## Supported development environment
-
-- Rust
-- TypeScript
-- Go
-- Lua
+My [Neovim](https://neovim.io) setup based on [LazyVim](https://lazyvim.org)
 
 ## clean_nvim.sh
 
@@ -25,4 +18,3 @@ rm -rf ~/.cache/nvim
 ```bash
 git clone https://github.com/jerryshell/mnv ~/.config/nvim
 ```
-
