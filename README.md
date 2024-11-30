@@ -7,10 +7,10 @@ My [Neovim](https://neovim.io) setup based on [LazyVim](https://lazyvim.org)
 ⚠️ Please make sure you fully understand the function of these commands!
 
 ```bash
-rm -rf ~/.config/nvim{,.bak} \
-rm -rf ~/.local/share/nvim{,.bak} \
-rm -rf ~/.local/state/nvim{,.bak} \
-rm -rf ~/.cache/nvim{,.bak}
+rm -rf ~/.config/nvim \
+rm -rf ~/.local/share/nvim \
+rm -rf ~/.local/state/nvim \
+rm -rf ~/.cache/nvim
 ```
 
 ## Install
@@ -23,7 +23,7 @@ git clone https://github.com/jerryshell/mnv ~/.config/nvim
 
 ``bash
 rm -rf ~/.config/nvim/.git
-``
+```
 
 ```bash
 nvim
