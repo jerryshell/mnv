@@ -21,7 +21,7 @@ You may need a VPN to do this if you are in 🇨🇳
 git clone https://github.com/jerryshell/mnv ~/.config/nvim
 ```
 
-``bash
+```bash
 rm -rf ~/.config/nvim/.git
 ```
 
