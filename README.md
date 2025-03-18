@@ -7,9 +7,9 @@ My [Neovim](https://neovim.io) setup based on [LazyVim](https://lazyvim.org)
 ⚠️ Please make sure you fully understand the function of these commands!
 
 ```bash
-rm -rf ~/.config/nvim \
-rm -rf ~/.local/share/nvim \
-rm -rf ~/.local/state/nvim \
+rm -rf ~/.config/nvim
+rm -rf ~/.local/share/nvim
+rm -rf ~/.local/state/nvim
 rm -rf ~/.cache/nvim
 ```
 

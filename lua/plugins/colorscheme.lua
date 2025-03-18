@@ -1,9 +1,14 @@
 return {
   {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "catppuccin",
+    },
+  },
+  {
     "catppuccin/nvim",
     name = "catppuccin",
     opts = {
-      flavour = "mocha",
       term_colors = true,
       color_overrides = {
         mocha = {
@@ -12,12 +17,6 @@ return {
           crust = "#000000",
         },
       },
-    },
-  },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "catppuccin",
     },
   },
 }
